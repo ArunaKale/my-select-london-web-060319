@@ -2,10 +2,11 @@ def my_select(array)
   i = 0
   result = []
   while i < array.length
-  if result.push (yield array[i]) == true
-  result.push(array[i])
-else 
-end 
+ result.push(yield array[i])
+                              #if result.push (yield array[i]) == true
+                             # result.push(array[i]) 
+                             #else 
+                             #end 
   i += 1
   end
 result
